@@ -8,6 +8,8 @@ class Movies{
     public $cover;
     public Genre $genre;
 
+    use HasAwards;
+
     public function __construct($title, $director, $year, $cover, Genre $genre){
         $this->title = $title;
         $this->director = $director;
