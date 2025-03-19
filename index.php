@@ -1,50 +1,14 @@
 <?php 
-class Genre{
 
-    private $genre;
+require_once('./Genre.php');
+require_once('./Movies.php');
 
-    public function __construct($genre){
-        $this->genre = $genre;
-    }
+require_once('./db.php');
 
-    public function setGenre(){
-        return $this->genre;
-    }
-
-}
-class Movies{
-
-    public $title;
-    public $director;
-    public $year;
-    public $cover;
-    public Genre $genre;
-
-    public function __construct($title, $director, $year, $cover, Genre $genre){
-        $this->title = $title;
-        $this->director = $director;
-        $this->year = $year;
-        $this->cover = $cover;
-        $this->genre = $genre;
-    }
-
-
-
-
-
-}
-
-$horror = new Genre('Horror');
-var_dump($horror);
-$movie = new Movies('The Grate Gatsby', 'Baz Luhrmann', 2013, 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com%2FGreat-Gatsby-Leonardo-DiCaprio%2Fdp%2FB00E1L5J9I&psig=AOvVaw0', $horror);
-var_dump($movie);
-
-
+var_dump($movies);
 
 
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -55,5 +19,6 @@ var_dump($movie);
 </head>
 <body>
     <h1>ciao</h1>
+
 </body>
 </html>
