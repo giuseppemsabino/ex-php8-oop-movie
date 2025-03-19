@@ -34,8 +34,10 @@ class Movies{
 
 }
 
-$genre = new Genre('Horror');
-
+$horror = new Genre('Horror');
+var_dump($horror);
+$movie = new Movies('The Grate Gatsby', 'Baz Luhrmann', 2013, 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com%2FGreat-Gatsby-Leonardo-DiCaprio%2Fdp%2FB00E1L5J9I&psig=AOvVaw0', $horror);
+var_dump($movie);
 
 
 
