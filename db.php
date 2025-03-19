@@ -1,9 +1,9 @@
 <?php
 
-$horror = new Genre('Horror');
-var_dump($horror);
+$genre = new Genre('Drama');
+var_dump($genre);
 $movies = [
-    new Movies('The Grate Gatsby', 'Baz Luhrmann', 2013, 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com%2FGreat-Gatsby-Leonardo-DiCaprio%2Fdp%2FB00E1L5J9I&psig=AOvVaw0', $horror),
-    new Movies('The Lord of th Rings: The Return of the King', 'Peter Jackson', 2003, 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com%2FLord-Rings-Fellowship-Ring-Extended%2Fdp%2FB00005JNAQ&psig=AOvVaw0', new Genre('Fantasy')),
-    new Movies('The Godfather', 'Francis Ford Coppola', 1972, 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com%2FGodfather-Collection-Blu-ray-Marlon-Brando%2Fdp%2FB00KXEM6ZG&psig=AOvVaw0', new Genre('Crime')),
+    new Movies('The Grate Gatsby', 'Baz Luhrmann', 2013, 'https://m.media-amazon.com/images/I/71AeXTp+mQL._AC_UF1000,1000_QL80_.jpg', $genre),
+    new Movies('The Lord of th Rings: The Return of the King', 'Peter Jackson', 2003, 'https://m.media-amazon.com/images/I/81+YmsWr5+L._AC_UF1000,1000_QL80_.jpg', new Genre('Fantasy')),
+    new Movies('The Godfather', 'Francis Ford Coppola', 1972, 'https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg', new Genre('Crime')),
 ];
