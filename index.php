@@ -10,7 +10,6 @@ require_once('./db.php');
 $movies[0]->setAwards(40);
 $movies[1]->setAwards(200 . '+');
 $movies[2]->setAwards(200 . '+');
-var_dump($movies[0]->getAwards());
 var_dump($movies);
 
 
